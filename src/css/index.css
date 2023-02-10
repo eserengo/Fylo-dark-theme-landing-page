@@ -1,0 +1,49 @@
+/*
+ Name: Fylo dark theme landing page.
+ Description: A Frontendmentor.io coding challenge.
+ Author: Federico Borzani.
+ Author URL:  https://github.com/eserengo/
+*/
+
+:root {
+
+  /* --- FONTS --- */
+
+  font-size: 14px;
+  --Raleway-Headings-CallToActions-HeaderNavigation: "Raleway";
+  --OpenSans-BodyCopy: "Open Sans";
+  --Normal: 400;
+  --Bold: 700;
+  text-rendering: optimizeLegibility;
+
+  /* --- COLOR PALETTE --- */
+
+/* Primary */
+
+  --DarkBlue-IntroAndEmailSignUpBackground: hsl(217, 28%, 15%);
+  --DarkBlue-MainBackground: hsl(218, 28%, 13%);
+  --DarkBlue-FooterBackground: hsl(216, 53%, 9%);
+  --DarkBlue-TestimonialsBackground: hsl(219, 30%, 18%);
+
+/* Accent */
+
+  --Cyan-InsideCallToActionGradient: hsl(176, 68%, 64%);
+  --Blue-InsideCallToActionGradient: hsl(198, 60%, 50%);
+  --LightRed-Error: hsl(0, 100%, 63%);
+
+/* Neutral */
+
+  --White: hsl(0, 0%, 99%);
+}
+
+.header {
+  background-color: var(--DarkBlue-IntroAndEmailSignUpBackground);
+  color: var(--White);
+  height: 64px;
+}
+
+.footer {
+  background-color: var(--DarkBlue-FooterBackground);
+  color: var(--White);
+}
+
