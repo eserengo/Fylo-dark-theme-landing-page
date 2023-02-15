@@ -12,8 +12,8 @@
   font-size: 14px;
   --Raleway-Headings-CallToActions-HeaderNavigation: "Raleway";
   --OpenSans-BodyCopy: "Open Sans";
-  --Normal: 400;
-  --Bold: 700;
+  --FontNormal: 400;
+  --FontBold: 700;
   text-rendering: optimizeLegibility;
 
   /* --- COLOR PALETTE --- */
@@ -29,7 +29,8 @@
 
   --Cyan-InsideCallToActionGradient: hsl(176, 68%, 64%);
   --Blue-InsideCallToActionGradient: hsl(198, 60%, 50%);
-  --LightRed-Error: hsl(0, 100%, 63%);
+  --LightRed-Error: hsl(0, 100%, 73%);
+  --Green-Success: rgb(125, 255, 125);
 
 /* Neutral */
 
@@ -39,11 +40,189 @@
 .header {
   background-color: var(--DarkBlue-IntroAndEmailSignUpBackground);
   color: var(--White);
-  height: 64px;
+}
+
+.header nav {
+  font-family: var(--Raleway-Headings-CallToActions-HeaderNavigation);
+  font-weight: var(--FontNormal);
+  font-size: 85%;
+}
+
+.modal {
+  position: fixed;
+  z-index: 2;
+  top: 8%;
+  left: 10%;
+  background-color: var(--White);
+  color: var(--DarkBlue-IntroAndEmailSignUpBackground);
+  padding: 16px;
+  width: 80%;
+  height: 22%;
+  font-size: 150%;
+  font-family: var(--Raleway-Headings-CallToActions-HeaderNavigation);
+  font-weight: var(--FontNormal);
+  box-shadow: 0px 1px 8px var(--DarkBlue-IntroAndEmailSignUpBackground), 0px 1px 8px var(--DarkBlue-TestimonialsBackground);
+}
+
+.modal ul {
+  gap: 8px;
+}
+
+.modal li:hover {
+  text-decoration: underline;
+}
+
+.main {
+  background-color: var(--DarkBlue-MainBackground);
+}
+
+.title {
+  font-family: var(--Raleway-Headings-CallToActions-HeaderNavigation);
+  font-weight: var(--FontBold);
+  color: var(--White);
+}
+
+.primary.title {
+  font-size: 150%;
+  letter-spacing: 1px;
+  line-height: 150%;
+}
+
+.secondary.title {
+  font-size: 125%;
+}
+
+.sub.title {
+  font-size: 100%;
+}
+
+.para {
+  font-family: var(--OpenSans-BodyCopy);
+  font-weight: var(--FontNormal);
+  font-size: 85%;
+  color: var(--White);
+}
+
+.button {
+  font-family: var(--Raleway-Headings-CallToActions-HeaderNavigation);
+  font-weight: var(--FontBold);
+  font-size: 90%;
+  background-image: linear-gradient(to right, var(--Cyan-InsideCallToActionGradient), var(--Blue-InsideCallToActionGradient));
+  color: var(--White);
+  border: none;
+  opacity: 85%;
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  opacity: 100%;
+  box-shadow: 0px 1px 8px var(--Blue-InsideCallToActionGradient);
+}
+
+.intro {
+  background-color: var(--DarkBlue-IntroAndEmailSignUpBackground);
+}
+
+.link {
+  color: var(--Cyan-InsideCallToActionGradient);
+  font-weight: var(--FontNormal);
+}
+
+.arrow.icon {
+  vertical-align: middle;
+}
+
+.testimonials {
+  gap: 16px;
+}
+
+.card {
+  background-color: var(--DarkBlue-TestimonialsBackground);
+  border: 1px solid var(--DarkBlue-TestimonialsBackground);
+  border-radius: 4px;
+}
+
+.subpara,
+.name {
+  color: var(--White);
+  font-family: var(--OpenSans-BodyCopy);
+  font-weight: var(--FontNormal);
+  font-size: 75%;
+}
+
+.avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.form {
+  background-color: var(--DarkBlue-IntroAndEmailSignUpBackground);
+  border: 1px solid var(--DarkBlue-IntroAndEmailSignUpBackground);
+  border-radius: 8px;
+  box-shadow: 0px 1px 8px var(--DarkBlue-MainBackground);
+}
+
+.form-action {
+  width: 100%;
+}
+
+.form-action input[type=email],
+.form-action button {
+  outline: none;
+}
+
+#email,
+.message {
+  font-family: var(--Raleway-Headings-CallToActions-HeaderNavigation);
+  font-weight: var(--FontNormal);
+  font-size: 66%;
+  color: var(--DarkBlue-FooterBackground);
+}
+
+.error {
+  color: var(--LightRed-Error) !important;
+}
+
+.success {
+  color: var(--Green-Success) !important;
+}
+
+.invalid {
+  border: 2px solid var(--LightRed-Error);
+}
+
+.valid {
+  border: 2px solid var(--Green-Success);
 }
 
 .footer {
   background-color: var(--DarkBlue-FooterBackground);
   color: var(--White);
+  font-family: var(--OpenSans-BodyCopy);
+  font-weight: var(--FontNormal);
+  font-size: 100%;
 }
 
+.links li:hover {
+  font-weight: var(--FontBold);
+}
+
+.social li .fa {
+  border: 1px solid var(--White);
+  border-radius: 50%;
+  padding: 4px 6px;
+}
+
+.social li .fa:hover {
+  color: var(--Cyan-InsideCallToActionGradient);
+  border: 1px solid var(--Cyan-InsideCallToActionGradient);
+  border-radius: 50%;
+}
+
+.attribution {
+  font-family: var(--OpenSans-BodyCopy);
+  font-weight: var(--FontNormal);
+  font-size: 50%;
+  margin: 16px auto 0px;
+}

@@ -1,8 +1,169 @@
+body {
+  min-width: 600px;
+}
+
+.header {
+  height: 64px;
+  padding: 16px 32px;
+}
+
+.header .logo {
+  width: 96px;
+}
+
+.header nav ul {
+  margin-top: 8px;
+  gap: 32px;  
+}
+
+.header nav ul li:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  background-image: url("../images/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: 100% 50%;
+  padding: 0% 25%;
+  gap: 16px;
+}
+
+.intro .para {
+  padding: 0% 10% 5%;
+}
+
+.button {
+  font-size: 80%;
+}
+
+.primary.button {
+  width: 220px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 32px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 45% 45%;
   grid-template-rows: 40% 40%;
   column-gap: 10%;
   row-gap: 20%;
-  padding: 5% 15%;
+  padding: 15%;
+}
+
+.grid-container .icon {
+  width: 48px;
+}
+
+.grid-container .sub.title {
+  padding: 5% 0%;
+}
+
+.productive {
+  padding: 0% 10%;
+  gap: 48px;
+}
+
+.productive .image {
+  width: 40%;
+}
+
+.productive .flex-col {
+  padding: 5% 0%;
+  gap: 16px;
+}
+
+.testimonials {
+  padding: 10%;
+  background-image: url("../images/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-size: 5% 10%;
+  background-position: 80px 64px;
+}
+
+.testimonials .flex-col .flex-row {
+  gap: 8px;
+  align-items: center;
+}
+
+.card {
+  padding: 4% 2%;
+  gap: 16px;
+}
+
+.main {
+  padding-bottom: 10%;
+}
+
+.form {
+  width: 60%;
+  padding: 4%;
+  margin: 0% 20%;
+  gap: 24px;
+  bottom: -5%;
+  left: 0%;
+  z-index: 3;
+}
+
+#email {
+  display: inline;
+  width: 60%;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 32px;
+  margin-right: 16px;
+}
+
+.secondary.button {
+  display: inline;
+  width: 40%;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 32px;
+}
+
+.message {
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+  left: 25%;
+  transform: translate(-50%, 0%);
+}
+
+.footer {
+  z-index: 0;
+  padding: 20% 5% 10%;
+  gap: 48px;
+}
+
+.footer .logo {
+  width: 120px;
+  height: 40px;
+}
+
+.footer .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.footer > .flex,
+.footer > .flex > .flex-col > .flex-row,
+.footer > .flex > .flex-row,
+.footer > .flex > .flex-col {
+  gap: 16px;
+}
+
+.links {
+  gap: 24px;
+  margin-top: -8px;
+}
+
+.links li {
+  padding: 8px 0px;
+}
+
+.social {
+  gap: 8px;
 }
